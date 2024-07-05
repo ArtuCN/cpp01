@@ -1,37 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   HumanB.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aconti <aconti@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/05 10:24:55 by aconti            #+#    #+#             */
-/*   Updated: 2024/07/05 11:36:32 by aconti           ###   ########.fr       */
+/*   Created: 2024/07/05 12:47:15 by aconti            #+#    #+#             */
+/*   Updated: 2024/07/05 13:02:53 by aconti           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-#define ZOMBIE_HPP
+#ifndef HUMANB_HPP
+# define HUMANB_HPP
 
-#include <iostream>
+#include "Weapon.hpp"
 
-class Zombie
+class HumanB
 {
 	private:
-		std::string name;
+		std::string	_name;
+		Weapon*		_weapon;
 	public:
-		
-		Zombie( void );//costruttore default
-		Zombie( std::string name );//costruttore con nome
-		~Zombie( void );//distruttore
-		
-		std::string getName( void );
-		void setName( std::string name );
-		void announce( void );
-
+		HumanB(std::string name);
+		~HumanB();
+		void	attack();
+		void	setWeapon(Weapon& weapon);
 };
-
-Zombie* newZombie( std::string name );
-void randomChump( std::string name );
 
 #endif

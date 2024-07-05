@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aconti <aconti@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/05 10:24:55 by aconti            #+#    #+#             */
-/*   Updated: 2024/07/05 11:36:32 by aconti           ###   ########.fr       */
+/*   Created: 2024/07/05 11:36:17 by aconti            #+#    #+#             */
+/*   Updated: 2024/07/05 11:44:35 by aconti           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,17 @@
 
 #include <iostream>
 
+#define NUM 10
+
 class Zombie
 {
 	private:
 		std::string name;
 	public:
 		
-		Zombie( void );//costruttore default
-		Zombie( std::string name );//costruttore con nome
-		~Zombie( void );//distruttore
+		Zombie( void );
+		Zombie( std::string name );
+		~Zombie( void );
 		
 		std::string getName( void );
 		void setName( std::string name );
@@ -31,7 +33,6 @@ class Zombie
 
 };
 
-Zombie* newZombie( std::string name );
-void randomChump( std::string name );
+Zombie* zombieHorde( int N, std::string name);
 
 #endif
