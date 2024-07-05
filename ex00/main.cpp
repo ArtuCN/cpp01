@@ -6,11 +6,11 @@
 /*   By: aconti <aconti@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 11:04:17 by aconti            #+#    #+#             */
-/*   Updated: 2024/07/05 11:14:53 by aconti           ###   ########.fr       */
+/*   Updated: 2024/07/05 11:18:47 by aconti           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "zombie.hpp"
+#include "Zombie.hpp"
 
 int main()
 {

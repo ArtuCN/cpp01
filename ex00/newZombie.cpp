@@ -6,11 +6,11 @@
 /*   By: aconti <aconti@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 10:24:52 by aconti            #+#    #+#             */
-/*   Updated: 2024/07/05 11:03:44 by aconti           ###   ########.fr       */
+/*   Updated: 2024/07/05 11:18:55 by aconti           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "zombie.hpp"
+#include "Zombie.hpp"
 
 Zombie* newZombie( std::string name )
 {
