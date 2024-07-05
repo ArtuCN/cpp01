@@ -6,15 +6,15 @@
 /*   By: aconti <aconti@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 12:36:10 by aconti            #+#    #+#             */
-/*   Updated: 2024/07/05 13:06:36 by aconti           ###   ########.fr       */
+/*   Updated: 2024/07/05 14:56:47 by aconti           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
 
-HumanB::HumanB(std::string name) : _name(name)
+HumanB::HumanB(std::string name) : _name(name), _weapon(nullptr)
 {
-	std::cout<<"HumanB "<<this->_name<<" created"<<std::endl;
+	
 }
 
 HumanB::~HumanB()
@@ -29,7 +29,7 @@ void HumanB::setWeapon(Weapon& weapon)
 
 void HumanB::attack()
 {
-	if (this->_weapon != NULL)
+	if (this->_weapon != nullptr)
 		std::cout<<this->_name<<" attacks with his "<<this->_weapon->getType()<<std::endl;
 	else
 		std::cout<<this->_name<<" attacks with his bare hands"<<std::endl;

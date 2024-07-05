@@ -5,30 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aconti <aconti@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/05 12:59:26 by aconti            #+#    #+#             */
-/*   Updated: 2024/07/05 14:53:57 by aconti           ###   ########.fr       */
+/*   Created: 2024/07/05 15:00:17 by aconti            #+#    #+#             */
+/*   Updated: 2024/07/05 15:31:16 by aconti           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "HumanA.hpp"
-#include "HumanB.hpp"
+#include "sedIsForLosers.hpp"
 
-int main()
+
+int main(int ac, char *av[])
 {
+	if (ac != 4)
 	{
-		Weapon club = Weapon("crude spiked club");
-		HumanA bob("Bob", club);
-		bob.attack();
-		club.setType("some other type of club");
-		bob.attack();
+		std::cout << "Error: Invalid number of arguments" << std::endl;
+		return (0);
 	}
-	{
-		Weapon club = Weapon("crude spiked club");
-		HumanB jim("Jim");
-		jim.setWeapon(club);
-		jim.attack();
-		club.setType("some other type of club");
-		jim.attack();
-	}
-	return 0;
+	std::string filename = av[1];
+	std::string s1 = av[2];
+	std::string s2 = av[3];
+	replace(filename, s1, s2);
 }

@@ -6,7 +6,7 @@
 #    By: aconti <aconti@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/05 11:09:20 by aconti            #+#    #+#              #
-#    Updated: 2024/07/05 11:18:19 by aconti           ###   ########.fr        #
+#    Updated: 2024/07/05 14:30:06 by aconti           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = zombie
 SRC = main.cpp newZombie.cpp randomChump.cpp Zombie.cpp
 OBJ = $(SRC:.cpp=.o)
 CPP = c++
-FLAGS = -Wall -Wextra -Werror -std=c++98
+FLAGS = -Wall -Wextra -Werror -std=c++98 -g
 
 %.o	: %.cpp
 	@$(CPP) $(FLAGS) -c $< -o $@

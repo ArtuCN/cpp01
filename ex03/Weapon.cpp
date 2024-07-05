@@ -6,22 +6,27 @@
 /*   By: aconti <aconti@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 12:37:55 by aconti            #+#    #+#             */
-/*   Updated: 2024/07/05 12:45:56 by aconti           ###   ########.fr       */
+/*   Updated: 2024/07/05 14:53:11 by aconti           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
 
-Weapon::Weapon(std::string type) : _type(type)
+Weapon::Weapon()
 {
-	Weapon weapon(type);
+	_type = "stick";
 }
 Weapon::~Weapon()
 {
 	std::cout<<"Weapon "<<this->_type<<" destroyed called"<<std::endl;	
 }
 
-const std::string&	Weapon::getType() const
+Weapon::Weapon(std::string type) : _type(type)
+{
+	
+}
+
+const std::string	Weapon::getType()
 {
 	return(this->_type);
 }
