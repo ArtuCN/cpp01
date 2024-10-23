@@ -6,7 +6,7 @@
 #    By: aconti <aconti@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/05 11:09:20 by aconti            #+#    #+#              #
-#    Updated: 2024/07/05 11:50:34 by aconti           ###   ########.fr        #
+#    Updated: 2024/10/23 14:16:03 by aconti           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,13 +32,16 @@ $(NAME) : $(OBJ)
 		@ echo $(FUCHSIA)       "/ /__|_   _|_   _|"$(NONE)
 		@ echo $(CYAN)          "\____/ |_|   |_|  "$(NONE)
 		@ echo $(FUCHSIA)       "                   "$(NONE)
-			
-	rm -rf $(OBJ)
+	
 
 all	: $(NAME)
 
 clean :
+	@rm -rf $(OBJ)
+
+fclean : clean
 	@rm -rf $(NAME)
+
 re: clean all
 
 .PHONY : all clean fclean re

@@ -22,11 +22,12 @@ $(NAME) : $(OBJ)
 		@ echo $(CYAN)          "\____/ |_|   |_|  "$(NONE)
 		@ echo $(FUCHSIA)       "                  "$(NONE)
 			
-	rm -rf $(OBJ)
 
 all	: $(NAME)
 
 clean :
+	@rm -rf $(OBJ)
+fclean : clean
 	@rm -rf $(NAME)
 re: clean all
 

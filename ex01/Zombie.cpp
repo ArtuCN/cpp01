@@ -6,7 +6,7 @@
 /*   By: aconti <aconti@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 10:37:17 by aconti            #+#    #+#             */
-/*   Updated: 2024/07/05 11:39:54 by aconti           ###   ########.fr       */
+/*   Updated: 2024/10/23 14:16:32 by aconti           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ Zombie::Zombie( std::string name )
 
 Zombie::~Zombie( void )
 {
-	std::cout<<"Zombie "<<getName()<<" is is dyiiiiiing"<<std::endl;
+	std::cout<<"Zombie "<<getName()<<" is dyiiiiiing"<<std::endl;
 }
 
 std::string Zombie::getName( void )

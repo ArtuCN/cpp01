@@ -6,7 +6,7 @@
 /*   By: aconti <aconti@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 17:59:06 by aconti            #+#    #+#             */
-/*   Updated: 2024/07/08 19:10:21 by aconti           ###   ########.fr       */
+/*   Updated: 2024/10/23 15:44:50 by aconti           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,10 +49,13 @@ void Harl::complain( std::string level)
 	{
         case 0:
             (this->*functions[0])();
+            break;
         case 1:
             (this->*functions[1])();
+            break;
         case 2:
             (this->*functions[2])();
+            break;
         case 3:
             (this->*functions[3])();
             break;
